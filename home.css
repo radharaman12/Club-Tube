@@ -1,0 +1,24 @@
+
+.body1{
+    background-image: url("./Media/bgh1.jpg");
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body1 div{
+    font-size: 100px;
+    font-family: "Playwrite GB S", cursive;
+}
+.body1 p{
+    display: block;
+}
+.s1{
+    color: #ff5757;
+}
+.s2{
+    color: black;
+}

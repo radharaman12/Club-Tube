@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubCops</title>
+    <link rel="shortcut icon" href="./Media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <script src="./register.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./home.html">
+                <img src="./Media/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="links">
+            <ul class="list-link">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./clubs.html">Clubs</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <center>
+        <form method="get" id="myform">
+
+            <h1>Registration Form</h1>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" onkeyup="namevalid()" placeholder="Full Name">
+            <div class="name" id="namemessage"></div>
+            
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" onkeyup="emailvalid()" placeholder="abc@gmail.com">
+            <div class="email" id="emailmessage"></div>
+
+
+            <label for="Gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male" name="gender">Male</option>
+                <option value="female" name="gender">Female</option>
+                <option value="others" name="gender">Others</option>
+            </select>
+            <!-- <div class="gender" id="gendermessage"></div> -->
+
+
+            <label for="club">Select Club</label>
+            <select name="club" id="club">
+                <option value="">NSS</option>
+                <option value="">NCC</option>
+                <option value="">Bhangra</option>
+                <option value="">block1</option>
+                <option value="">block2</option>
+                <option value="">block3</option>
+            </select>
+
+
+            <label for="field">Intrested In:- </label>
+            <select name="field" id="field">
+                <option value="">Photos and Graphics</option>
+                <option value="">Video Editing</option>
+                <option value="">Content Writing</option>
+                <option value="">Social Media Marketing</option>
+                <option value="">Public Speaking</option>
+                <option value="">Others</option>
+            </select>
+            <div class="field" id="feildmessage"></div>
+
+            <label for="Bio">Bio</label>
+            <textarea name="Bio" id="bio" placeholder="About You"></textarea>
+            <div class="bio" id="biomessage"></div>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </center>
+
+
+
+
+
+
+
+    <footer>
+        <p class="foot">
+            &copy;2024 - @ClubTube
+        </p>
+    </footer>
+
+    <script></script>
+</body>
+
+</html>
